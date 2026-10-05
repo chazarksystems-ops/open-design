@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "open-design",
+  "version": "1.0.1",
+  "description": "Connect a supported local agent host to an OpenDesign workspace to read, create, and revise design artifacts through its existing MCP server. Requires the fork's built od CLI and a reachable OpenDesign daemon.",
+  "author": {
+    "name": "Chaz Ark Systems"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "OpenDesign",
+        "shortDescription": "Create and revise designs",
+        "longDescription": "Work with OpenDesign projects and design artifacts through the existing local MCP server. This package requires the built od CLI on the agent host. Hosted web and mobile chats need a separately configured remote connection; uploading this package does not host OpenDesign.",
+        "developerName": "Chaz Ark Systems",
+        "category": "Productivity",
+        "defaultPrompt": "Use OpenDesign to help me create or revise a design in my workspace."
+      }
+    }
+  }
+}
